@@ -1,0 +1,197 @@
+
+   html {
+    font-size: 14px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+a {
+    font-size: 1.2rem;
+    color: #000;
+}
+header {
+    background-image: url("img/header-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.heading-section {
+    padding-top: 55%;
+    width: 100%;
+}
+.heading-section a {
+    background-color: #fff;
+    width: 180px;
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin: 2%;
+    color: #000;
+    text-decoration: none;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.header-heading {
+    font-size: 3rem;
+}
+/* menu */
+.navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.navbar > div {
+    flex-basis: 100%;
+    text-align: right;
+}
+.navbar > a.navbar-brand {
+    flex-basis: 10%;
+}
+.menu-list {
+    list-style-type: none;
+    background-color: #d74015;
+}
+
+/* section features */
+.bg {
+    background-color: #f6f6f6;
+}
+.section-features {
+    text-align: center;
+    padding: 2% 0;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+}
+.info-section-2 .features {
+    flex-wrap: wrap;
+}
+.section-features .feature {
+    flex-basis: 40%;
+    margin: 1%;
+    padding: 2em 0;
+}
+.blue-button {
+    width: 200px;
+    background-color: cornflowerblue;
+    padding: 0.5em 0;
+    display: inline-block;
+    border-radius: 40px;
+    text-align: center;
+}
+.info-section .features {
+    justify-content: flex-end;
+    width: 100%;
+}
+.container-img {
+    min-height: 97px;
+    line-height: 97px;
+}
+img.feature {
+    margin: 0;
+}
+.feature-list ol {
+    column-count:2;
+    text-align: left;
+}
+ol {
+    list-style-position: inside;
+}
+
+footer {
+    display: flex;
+padding: 2em;
+background-color: #d31f18;
+line-height: 0.6em;
+}
+footer > * {
+    margin: 0 auto;
+}
+footer h5 {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 0;
+}
+footer strong {
+    min-width: 80px;
+display: inline-block;
+}
+.social span {
+    color: #fff;
+    display: inline-block;
+    background-color: #000;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.social span:hover {
+    transform: scale(1.1);
+}
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+    header {
+        background-color: lightblue;
+        height: 1000px;
+    }
+    .feature {
+        width: 50%;
+    }
+    .menu-list {
+        background-color: transparent;
+    }
+    .menu-list-item {
+        display: inline;
+        margin: 0 .6rem;
+    }
+    .navbar > div {
+        flex-basis: 80%;
+    }
+    .navbar > a.navbar-brand {
+        flex-basis: 10%;
+    }
+    .navbar {
+        display: flex;
+        padding: 2em 0;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        position: static;
+    }
+    .section-features .feature {
+        flex-basis: 20%;
+        margin: 1%;
+    }
+    .heading-section {
+        padding-top: 9%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    footer {
+        overflow-x: hidden;
+        flex-direction: column;
+    }
+}

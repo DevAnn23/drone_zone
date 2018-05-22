@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>Mailing</title>
+</head>
+<style>
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        margin: 0;
+        padding: 1em;
+        overflow-x: hidden;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.9;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        border: 1px solid #c10127;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header {
+        padding: 2em 2em 13em;
+        background-image: url("img/header-bg.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .mailing-heading {
+        padding-top: 10%;
+        padding-left: 15%;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .mailing-heading span {
+        padding-left: 12%;
+    }
+
+    .features {
+        display: flex;
+        padding-top: 6em;
+    }
+
+    .feature {
+        flex-basis: 40%;
+        margin: 3% 1%;
+    }
+
+    h2 {
+        min-height: 5em;
+        padding-top: 1em;
+        text-align: center;
+
+    }
+
+    .check {
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        width: 180px;
+        padding: 8px 0;
+        margin: 0 auto;
+        line-height: 2.2em;
+        display: block;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .features p {
+        height: 10em;
+        overflow: hidden;
+    }
+
+    .social span {
+        color: #fff;
+        display: inline-block;
+        background-color: #000;
+        line-height: 2em;
+        text-align: center;
+        width: 2em;
+        border-radius: 50%;
+    }
+
+    .social span:hover {
+        transform: scale(1.1);
+    }
+
+    h5 {
+        margin-bottom: 1em;
+    }
+
+    footer {
+        display: flex;
+        padding: 2em;
+        background-color: #d31f18;
+        line-height: 0.6em;
+    }
+
+    footer>* {
+        margin: 0 auto;
+    }
+
+    footer h5 {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    footer strong {
+        min-width: 80px;
+        display: inline-block;
+    }
+
+    @media only screen and (max-width: 767px) {
+        html {
+            font-size: 10px;
+        }
+        body * {
+            overflow-x: hidden;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <main class="container">
+        <header>
+            <a href="#">
+                <img src="img/icon-dron.png" alt="logo">DroneZone</a>
+            <h1 class="mailing-heading">Sprawdź
+                <br>
+                <span>nasze aktualności</span>
+            </h1>
+        </header>
+        <section class="features">
+            <article class="feature">
+                <div class="head-features">
+                    <img src="img/view.jpg" alt="">
+                </div>
+                <h2>Przykładowy nagłówek</h2>
+                <p>
+                    Ten tekst wyświetlony w oknie przeglądarki internetowej został umieszczony w zawartości tego przykładowego elementu "div"
+                    wyłącznie w celach prezentacyjnych,
+                </p>
+                <a href="" class="check">Czytaj więcej</a>
+            </article>
+            <article class="feature">
+                <div class="head-features">
+                    <img src="img/dron.jpg" alt="">
+                </div>
+                <h2>Przykładowy nagłówek</h2>
+                <p>
+                    internetowej został umieszczony w zawartości tego przykładowego elementu "div" wyłącznie w celach prezentacyjnych,
+                </p>
+                <a href="" class="check">Czytaj więcej</a>
+            </article>
+            <article class="feature">
+                <div class="head-features">
+                    <img src="img/view.jpg" alt="">
+                </div>
+                <h2>Przykładowy nagłówek</h2>
+                <p>
+                    Ten tekst wyświetlony w oknie przeglądarki internetowej został umieszczony w zawartości tego przykładowego elementu "div"
+                    wyłącznie w celach prezentacyjnych,
+                </p>
+                <a href="" class="check">Czytaj więcej</a>
+            </article>
+        </section>
+        <footer>
+            <div class="contact">
+                <h5>Skontaktuj się z nami</h5>
+                <p class="footer-p">
+                    <strong>Adres:</strong> przykładowy adres</p>
+                <p class="footer-p">
+                    <strong>Nip:</strong> przykławowy NIP</p>
+                <p class="footer-p">
+                    <strong>Telefon:</strong> przykładoy telefon</p>
+            </div>
+            <div class="social">
+                <h5>Znajdź nas</h5>
+                <span class="ion-social-twitter"></span>
+                <span class="ion-social-instagram"></span>
+                <span class="ion-social-facebook"></span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
